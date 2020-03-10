@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define NBRCERCLE 55
+#define NBRCERCLE 80
 
 int main(int argc, char *argv[])
 {
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
         return 3;
     }
 
-    if (SDL_CreateWindowAndRenderer(620, 620, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
+    if (SDL_CreateWindowAndRenderer(720, 720, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
         return 3;
     }
