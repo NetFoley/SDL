@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define NBRCERCLE 80
+#define NBRCERCLE 15
 
 int main(int argc, char *argv[])
 {
@@ -81,9 +81,9 @@ int main(int argc, char *argv[])
         //COULEURS FOND
         Uint8 r=0,g=0,b=0;
         assignColor(window, &r, &g, &b, carre.pos.x, carre.pos.y, 0);
+
         SDL_SetRenderDrawColor(renderer, r, g, b, 0);
         SDL_RenderClear(renderer);
-
 
         //COULEURS CUBE
         Uint8 colorB=0, colorG=0, colorR=0;
@@ -108,7 +108,6 @@ int main(int argc, char *argv[])
                 circle[i].rayon++;
             }
 
-            SDL_SetRenderDrawColor(renderer, circle[i].r, circle[i].g, circle[i].b, 0);
             DrawCircle(renderer, window, &circle[i]);
         }
 

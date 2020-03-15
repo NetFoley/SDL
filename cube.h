@@ -75,6 +75,7 @@ void DrawCircle(SDL_Renderer * renderer, SDL_Window * window, circle * circle)
    int32_t ty = 1;
    int32_t error = (tx - diameter);
 
+   SDL_SetRenderDrawColor(renderer, circle->r, circle->g, circle->b, 0);
    while (x >= y)
    {
       //  Each of the following renders an octant of the circle
